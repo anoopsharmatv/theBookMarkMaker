@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background-container d-flex flex-column justify-content-end">
+        <p class="hello ml-1">Hello</p>
+        <h1 class="janedoe ml-2 mb-2">Jane Doe</h1>
+        <div class="container-card ">
+            <h1 class="mt-4 bookmarkheading">Bookmark Your Favourite Sites</h1>
+            <div class="m-5">
+                <form id="bookmarkForm" class="form-container p-2">
+                    <div class="m-5">
+                        <label for="siteNameInput">SITE NAME</label>
+                        <input placeholder="Enter Site Name" class="form-control" id="siteNameInput" type="text" />
+                        <p class="errortext" id="siteNameErrMsg"></p>
+                    </div>
+                    <div class="m-5">
+                        <label id="" for="siteUrlInput">SITE URL</label>
+                        <input placeholder="Enter Site Url" class="form-control" id="siteUrlInput" type="text" />
+                        <p class="errortext" id="siteUrlErrMsg"></p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end m-3 mr-5">
+                        <button class="ml-auto btn btn-primary button" id="submitBtn">Submit</button>
+                    </div>
+
+                </form>
+                <div id="bookmark" class="msg-container mt-4 p-3 d-none">
+                    <ul id="bookmarksList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
